@@ -1,3 +1,5 @@
+// Oncicks which will be turned to web port signals
+
 $(".turbine-status__temp").on("click", function () {
     $( this ).addClass("complete");
     $('.turbine-status__exclamation--temp').hide();
@@ -18,3 +20,6 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__okay-text--bolt-tension').show();
     $('.turbine-status__triangle--bolt-tension').addClass("complete");
   });
+
+// Cycle through error messages
+

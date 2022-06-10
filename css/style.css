@@ -63,6 +63,8 @@ body {
     font-size: 16pt;
 }
 
+/** action required **/
+
 .action-required__action-text {
     display: none;
     text-transform: uppercase;
@@ -72,6 +74,9 @@ body {
 .action-required__action-text.complete {
     display: block;
 }
+
+
+/** turbine status **/
 
 .turbine-status.complete {
     fill:#2FD987;
@@ -106,4 +111,18 @@ body {
 
 .turbine-status__triangle--temp.complete {
     fill: white;
+}
+
+/** action required **/
+
+.action-required__required-text {
+    transform: translateX(10px);
+}
+
+.action-required__action-text--vibration,
+.action-required__action-text--tempature,
+.action-required__action-text--oil-pressure,
+.action-required__action-text--oil-level,
+.action-required__action-text--bolt-tension {
+    display: none;
 }
