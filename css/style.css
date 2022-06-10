@@ -69,14 +69,41 @@ body {
     font-size: 42px;
 }
 
-.action-required__action-text.active {
+.action-required__action-text.complete {
     display: block;
 }
 
-.turbine-status__exclamation {
-    fill: #32325B;
+.turbine-status.complete {
+    fill:#2FD987;
 }
 
-.turbine-status__okay-status {
+.turbine-status__temp.complete .turbine-status__exclamation {
+    display: none;
+}
+
+.turbine-status__exclamation {
+    /* pointer-events: none; */
+}
+
+.turbine-status__triangle.complete {
+    fill: white;
+}
+
+.turbine-status--okay-status {
     fill:#2FD987;
+}
+
+.turbine-status__okay-text--vibration,
+.turbine-status__okay-text--oil-level {
+    display: block;
+}
+
+.turbine-status__okay-text--bolt-tension,
+.turbine-status__okay-text--oil-pressure,
+.turbine-status__okay-text--temp {
+    display: none;
+}
+
+.turbine-status__triangle--temp.complete {
+    fill: white;
 }
