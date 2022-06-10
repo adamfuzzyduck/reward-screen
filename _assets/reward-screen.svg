@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 1920" style="enable-background:new 0 0 1080 1920;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#19192F;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;}
+	.st3{fill:#32325B;}
+	.st4{font-family:'Gilroy-Bold';}
+	.st5{font-size:78.0911px;}
+	.st6{letter-spacing:7;}
+	.st7{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st8{font-size:48px;}
+	.st9{letter-spacing:4;}
+	.st10{font-size:67.2575px;}
+	.st11{letter-spacing:6;}
+	.st12{opacity:0.7;}
+	.st13{fill:#EFEFEF;}
+	.st14{opacity:0.1;fill:#FFA76C;}
+	.st15{opacity:0.3;fill:#FFA76C;}
+	.st16{fill:#FF6D00;}
+	.st17{fill:#2FD987;}
+	.st18{font-size:34.0668px;}
+	.st19{font-size:60.1717px;}
+	.st20{font-size:43.4882px;}
+</style>
+<rect x="-422.1" y="420" transform="matrix(-3.797738e-07 1 -1 -3.797738e-07 1499.6218 419.8382)" class="st0" width="1924" height="1079.4"/>
+<g>
+	<circle class="st1" cx="36.1" cy="1887.2" r="8.6"/>
+	<circle class="st1" cx="1047.4" cy="1887.2" r="8.6"/>
+	<circle class="st1" cx="36.1" cy="36.7" r="8.6"/>
+	<circle class="st1" cx="1041.7" cy="36.7" r="8.6"/>
+</g>
+<rect x="105.3" y="935.1" class="st2" width="867.5" height="141.1"/>
+<path class="st2" d="M938.3,1828.9H127.8c-11.1-11.1-17.3-17.3-28.5-28.5v-577.9c11.1-11.1,17.3-17.3,28.5-28.5h810.6
+	c11.1,11.1,17.3,17.3,28.5,28.5v577.9C955.7,1811.5,949.5,1817.8,938.3,1828.9z"/>
+<polygon class="st3" points="138.1,1803.9 124.3,1790.1 124.3,1232.8 138.1,1219 928,1219 941.8,1232.8 941.8,1790.1 928,1803.9 "/>
+<rect x="105.3" y="262.5" class="st2" width="867.5" height="141.1"/>
+<rect x="105.3" y="430" class="st2" width="867.5" height="141.1"/>
+<rect x="105.3" y="597.5" class="st2" width="867.5" height="141.1"/>
+<rect x="105.3" y="765.1" class="st2" width="867.5" height="141.1"/>
+<circle class="st1" cx="158" cy="1256.6" r="8.6"/>
+<circle class="st1" cx="911.6" cy="1256.6" r="8.6"/>
+<circle class="st1" cx="158" cy="1775.1" r="8.6"/>
+<circle class="st1" cx="911.6" cy="1775.1" r="8.6"/>
+<g>
+	<text transform="matrix(1 0 0 1 177.4426 178.3021)" class="st1 st4 st5 st6">TURBINE STATUS</text>
+</g>
+<g>
+	<line class="st7" x1="914.5" y1="151.1" x2="1079.6" y2="151.1"/>
+	<line class="st2" x1="914.1" y1="112.3" x2="914.1" y2="189.9"/>
+</g>
+<g>
+	<line class="st7" x1="133" y1="151.1" x2="0.2" y2="151.1"/>
+	<line class="st2" x1="133.5" y1="189.9" x2="133.5" y2="112.3"/>
+</g>
+<line class="st7" x1="834.9" y1="935.3" x2="834.9" y2="1076.2"/>
+<g>
+	<text transform="matrix(1 0 0 1 169.988 348.6946)" class="st1 st4 st8 st9">Vibration</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 169.988 515.7868)" class="st1 st4 st8 st9">TEMPERATURE</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 189.6243 1593.3308)" class="st1 st4 st10 st11">REDUCE FAN SPEED</text>
+</g>
+<g class="st12">
+	<text transform="matrix(1 0 0 1 283.9104 1503.2915)" class="st1 st4 st8 st9">ACTION REQUIRED!</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 168.988 680.9618)" class="st1 st4 st8 st9">OIL PRESSURE</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 171.697 851.2694)" class="st1 st4 st8 st9">OIL LEVEL</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 166.6208 1022.0748)" class="st1 st4 st8 st9">BOLT TENSION</text>
+</g>
+<path class="st13" d="M74.8,311.7L43.9,330c-2.3,1.4-2.3,4.7,0,6.1l30.9,18.3c2.4,1.4,5.3-0.3,5.3-3v-36.5
+	C80.1,312,77.2,310.3,74.8,311.7z"/>
+<path class="st13" d="M1003.4,984.3l30.9,18.3c2.3,1.4,2.3,4.7,0,6.1l-30.9,18.3c-2.4,1.4-5.3-0.3-5.3-3v-36.5
+	C998,984.6,1001,982.9,1003.4,984.3z"/>
+<path class="st14" d="M29,492.4l48.9-28.9c6.3-3.7,14.3,0.8,14.3,8.2v57.8c0,7.3-8,11.9-14.3,8.2L29,508.7
+	C22.8,505,22.8,496.1,29,492.4z"/>
+<path class="st15" d="M35.5,495.5l41.8-24.7c3.9-2.3,8.8,0.5,8.8,5v49.4c0,4.5-4.9,7.3-8.8,5l-41.8-24.7
+	C31.7,503.3,31.7,497.8,35.5,495.5z"/>
+<path class="st16" d="M74.8,479.2l-30.9,18.3c-2.3,1.4-2.3,4.7,0,6.1l30.9,18.3c2.4,1.4,5.3-0.3,5.3-3v-36.5
+	C80.1,479.6,77.2,477.9,74.8,479.2z"/>
+<path class="st13" d="M74.8,646.8L43.9,665c-2.3,1.4-2.3,4.7,0,6.1l30.9,18.3c2.4,1.4,5.3-0.3,5.3-3v-36.5
+	C80.1,647.1,77.2,645.4,74.8,646.8z"/>
+<path class="st13" d="M74.8,814.3l-30.9,18.3c-2.3,1.4-2.3,4.7,0,6.1l30.9,18.3c2.4,1.4,5.3-0.3,5.3-3v-36.5
+	C80.1,814.6,77.2,812.9,74.8,814.3z"/>
+<rect x="845.5" y="948" class="st3" width="115.3" height="115.3"/>
+<line class="st7" x1="834.9" y1="262.6" x2="834.9" y2="403.4"/>
+<rect x="845.5" y="275.2" class="st17" width="115.3" height="115.3"/>
+<line class="st7" x1="834.9" y1="430" x2="834.9" y2="570.8"/>
+<rect x="845.5" y="442.6" class="st3" width="115.3" height="115.3"/>
+<line class="st7" x1="834.9" y1="597.4" x2="834.9" y2="738.2"/>
+<rect x="845.5" y="610" class="st3" width="115.3" height="115.3"/>
+<line class="st7" x1="834.9" y1="764.8" x2="834.9" y2="905.6"/>
+<rect x="845.5" y="777.4" class="st17" width="115.3" height="115.3"/>
+<g>
+	<circle class="st16" cx="903.4" cy="1003.8" r="26.2"/>
+	<g>
+		<text transform="matrix(1 0 0 1 898.3641 1016.0461)" class="st1 st4 st18">!</text>
+	</g>
+</g>
+<g>
+	<circle class="st16" cx="904.4" cy="500.6" r="26.2"/>
+	<g>
+		<text transform="matrix(1 0 0 1 899.3641 512.7775)" class="st1 st4 st18">!</text>
+	</g>
+</g>
+<g>
+	<circle class="st16" cx="904.4" cy="667.1" r="26.2"/>
+	<g>
+		<text transform="matrix(1 0 0 1 899.3641 679.3061)" class="st1 st4 st18">!</text>
+	</g>
+</g>
+<g>
+	<circle class="st16" cx="539.9" cy="1327.8" r="46.3"/>
+	<g>
+		<text transform="matrix(1 0 0 1 531.0696 1349.4143)" class="st1 st4 st19">!</text>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 872.4397 345.528)" class="st0 st4 st20">OK</text>
+<text transform="matrix(1 0 0 1 872.4397 851.2692)" class="st0 st4 st20">OK</text>
+</svg>

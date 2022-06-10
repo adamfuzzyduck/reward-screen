@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'GilroyHeavy';
+    src: url('Gilroy-Heavy.woff2') format('woff2'),
+        url('Gilroy-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('Gilroy-Light.woff2') format('woff2'),
+        url('Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('Gilroy-Bold.woff2') format('woff2'),
+        url('Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('Gilroy-Medium.woff2') format('woff2'),
+        url('Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Regular.woff2') format('woff2'),
+        url('Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:'GilroyBold', Helvetica, sans-serif;
+    font-size: 0.8em;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.webserial {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
+    font-size: 16pt;
+}
+
+.action-required__action-text {
+    display: none;
+    text-transform: uppercase;
+    font-size: 47px;
+}
+
+.action-required__action-text.active {
+    display: block;
+}
+
+.turbine-status__exclamation {
+    fill: #32325B;
+}
+
+.turbine-status__okay-status {
+    fill:#2FD987;
+}
