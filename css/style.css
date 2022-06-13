@@ -90,7 +90,7 @@ body {
 }
 
 .turbine-status__exclamation {
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 
 .turbine-status__triangle.complete {
@@ -108,7 +108,9 @@ body {
 
 .turbine-status__okay-text--bolt-tension,
 .turbine-status__okay-text--oil-pressure,
-.turbine-status__okay-text--temp {
+.turbine-status__okay-text--temp,
+.turbine-status__okay-text--oil-level,
+.turbine-status__okay-text--vibration {
     display: none;
 }
 
