@@ -79,17 +79,6 @@ body {
     transform: translateX(10px);
 }
 
-.action-required__action-text--vibration,
-.action-required__action-text--tempature,
-.action-required__action-text--oil-pressure,
-.action-required__action-text--oil-level,
-.action-required__action-text--bolt-tension text {
-    display: none;
-}
-
-
-
-
 /** turbine status **/
 
 .turbine-status.complete {
