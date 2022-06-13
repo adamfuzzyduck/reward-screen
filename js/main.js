@@ -39,7 +39,7 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__exclamation--bolt-tension').hide();
     $('.turbine-status__okay-text--bolt-tension').show();
     $('.turbine-status__triangle--bolt-tension').addClass("complete");
-    $(".action-required__action-text--tension").remove();
+    $(".action-required__action-text--bolt-tension").remove();
   });
 
 // Cycle through error messages
