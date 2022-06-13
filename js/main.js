@@ -5,6 +5,7 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__exclamation--temp').hide();
     $('.turbine-status__okay-text--temp').show();
     $('.turbine-status__triangle--temp').addClass("complete");
+    $(".action-required__action-text--temp").removeClass("action-required__action-text--incomplete");
   });
 
   $(".turbine-status__oil-pressure").on("click", function () {
@@ -12,6 +13,8 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__exclamation--oil-pressure').hide();
     $('.turbine-status__okay-text--oil-pressure').show();
     $('.turbine-status__triangle--oil-pressure').addClass("complete");
+    $(".action-required__action-text--oil-pressure").removeClass("action-required__action-text--incomplete");
+    
   });
 
   $(".turbine-status__bolt-tension").on("click", function () {
@@ -19,27 +22,20 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__exclamation--bolt-tension').hide();
     $('.turbine-status__okay-text--bolt-tension').show();
     $('.turbine-status__triangle--bolt-tension').addClass("complete");
+    $(".action-required__action-text--tension").removeClass("action-required__action-text--incomplete");
   });
 
 // Cycle through error messages
 
-// $(".action-required__action-text").each(function(index){
-//     if (!$( this ).hasClass("complete")) {
-//         $(this).delay(3000*index).fadeIn(3000).delay(300).fadeOut(1000);
-//         console.log(this);
-//     }
-// });
+var quotes = $(".action-required__action-text--incomplete");
+var quoteIndex = -1;
+  
+  function showNextQuote() {
+    ++quoteIndex;
+    quotes.eq(quoteIndex % quotes.length)
+        .fadeIn(2000)
+        .delay(2000)
+        .fadeOut(2000, showNextQuote);
+}
 
-$(function() {
-    var i = 0;
-    var delay = 3000; 
-    var items = $(".action-required__action-text-wrapper .action-required__action-text");
-    items.eq(0).show();
-    var len = items.length;
-    setInterval(function() {
-        //items.fadeOut().eq(++i % len).fadeIn();
-        items.filter(":visible").fadeOut(function() {
-            items.eq(++i % len).fadeIn();
-        });
-    }, delay);
-});
+showNextQuote();
