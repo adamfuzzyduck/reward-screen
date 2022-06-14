@@ -83,6 +83,7 @@ body {
 
 .turbine-status.complete {
     fill:#2FD987;
+    transition: .2s ease-in-out;
 }
 
 .turbine-status__temp.complete .turbine-status__exclamation {
@@ -93,12 +94,31 @@ body {
     pointer-events: none;
 }
 
+.turbine-status__triangle--vibration-overlay {
+    transform: translate(0px, -165px);
+}
+
+.turbine-status__triangle--oil-pressure-overlay {
+    transform: translate(0px, 167px);
+}
+
+.turbine-status__triangle--oil-level-overlay {
+    transform: translate(0px, 337px);
+}
+
+.turbine-status__triangle--bolt-tension-overlay {
+    transform: rotate(60deg) translate(511px, -345px);
+    transform-origin: 60px;
+}
+
 .turbine-status__triangle.complete {
     fill: white;
+    transition: .2s ease-in-out;
 }
 
 .turbine-status--okay-status {
     fill:#2FD987;
+    transition: .2s ease-in-out;
 }
 
 .turbine-status__okay-text--vibration,
@@ -114,6 +134,11 @@ body {
     display: none;
 }
 
-.turbine-status__triangle--temp.complete {
+.turbine-status__triangle--bolt-tension.complete,
+.turbine-status__triangle--oil-pressure.complete,
+.turbine-status__triangle--temp.complete,
+.turbine-status__triangle--oil-level.complete,
+.turbine-status__triangle--vibration.complete {
     fill: white;
+    transition: .2s ease-in-out;
 }
