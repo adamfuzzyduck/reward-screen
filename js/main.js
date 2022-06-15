@@ -5,7 +5,11 @@ $(".turbine-status__vibration").on("click", function () {
   $('.turbine-status__exclamation--vibration').hide();
   $('.turbine-status__okay-text--vibration').show();
   $('.turbine-status__triangle--vibration').addClass("complete");
-  $(".action-required__action-text--vibration").remove();
+  $(".action-required__action-text--incomplete-1").remove();
+  $(".turbine-status__triangle-1").remove();
+
+  let totalNumber = parseInt($(".number-count").attr("data-id")) -1;
+  $('.number-count').attr('data-id', totalNumber );
 });
 
 
@@ -14,7 +18,11 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__exclamation--temp').hide();
     $('.turbine-status__okay-text--temp').show();
     $('.turbine-status__triangle--temp').addClass("complete");
-    $(".action-required__action-text--temp").remove();
+    $(".action-required__action-text--incomplete-2").remove();
+    $(".turbine-status__triangle-2").remove();
+
+    let totalNumber = parseInt($(".number-count").attr("data-id")) -1;
+    $('.number-count').attr('data-id', totalNumber );
   });
 
   $(".turbine-status__oil-pressure").on("click", function () {
@@ -22,7 +30,11 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__exclamation--oil-pressure').hide();
     $('.turbine-status__okay-text--oil-pressure').show();
     $('.turbine-status__triangle--oil-pressure').addClass("complete");
-    $(".action-required__action-text--oil-pressure").remove();
+    $(".action-required__action-text--incomplete-3").remove();
+    $(".turbine-status__triangle-3").remove();
+
+    let totalNumber = parseInt($(".number-count").attr("data-id")) -1;
+    $('.number-count').attr('data-id', totalNumber );
   });
 
   $(".turbine-status__oil-level").on("click", function () {
@@ -30,7 +42,11 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__exclamation--oil-level').hide();
     $('.turbine-status__okay-text--oil-level').show();
     $('.turbine-status__triangle--oil-level').addClass("complete");
-    $(".action-required__action-text--oil-level").remove();
+    $(".action-required__action-text--incomplete-4").remove();
+    $(".turbine-status__triangle-4").remove();
+
+    let totalNumber = parseInt($(".number-count").attr("data-id")) -1;
+    $('.number-count').attr('data-id', totalNumber );
   });
   
 
@@ -39,20 +55,44 @@ $(".turbine-status__temp").on("click", function () {
     $('.turbine-status__exclamation--bolt-tension').hide();
     $('.turbine-status__okay-text--bolt-tension').show();
     $('.turbine-status__triangle--bolt-tension').addClass("complete");
-    $(".action-required__action-text--bolt-tension").remove();
+    $(".action-required__action-text--incomplete-5").remove();
+    $(".turbine-status__triangle-5").remove();
+
+    let totalNumber = parseInt($(".number-count").attr("data-id")) -1;
+    $('.number-count').attr('data-id', totalNumber );
   });
 
-// Cycle through error messages
 
-var jobs = $(".action-required__action-text--incomplete");
-var jobIndex = -1;
+let actionText = $('g[class^="action-required__action-text--incomplete-"]').hide(),
+    triangle = $('path[class^="turbine-status__triangle-"]').hide(),
+    i = 0;
+
+  let knownLength = setInterval(function() {
+    $('.number-count').attr("data-id");
+  }, 1000);
+
+function cycle(list,itemNbr) {
+    
+    list.eq(itemNbr)
+      .fadeIn(400)
+      .delay(1000)
+      .fadeOut(400,function(){ 
+        cycle(list, ++itemNbr % knownLength)
+      });
+      
+};
   
-  function showNextJob() {
-    ++jobIndex;
-    jobs.eq(jobIndex % jobs.length)
-        .fadeIn(1000)
-        .delay(1000)
-        .fadeOut(1000, showNextJob);
-}
+cycle(actionText,i);
+cycle(triangle,i); 
 
-showNextJob();
+var timer2 = setInterval(function() {
+  if($('.number-count').attr("data-id") == 0 ) {
+    $('.video-wrapper').fadeIn(1000);
+    $('.video-source').trigger('play');
+  }
+}, 1000);
+
+document.getElementsByClassName('video-source').addEventListener('ended',myHandler,false);
+function myHandler(e) {
+  location.reload();
+}

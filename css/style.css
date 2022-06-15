@@ -71,8 +71,13 @@ body {
     font-size: 42px;
 }
 
-.action-required__action-text.complete {
-    display: none;
+.action-required__action-text--vibration.complete,
+.action-required__action-text--temp.complete,
+.action-required__action-text--oil-pressure.complete,
+.action-required__action-text--oil-level.complete,
+.action-required__action-text--bolt-tension.complete {
+    fill: white;
+    transition: .2s ease-in-out;
 }
 
 .action-required__required-text {
@@ -111,8 +116,13 @@ body {
     transform-origin: 60px;
 }
 
-.turbine-status__triangle.complete {
-    fill: white;
+.turbine-status__triangle {
+    fill: #FF6D00;
+    transition: .2s ease-in-out;
+}
+
+.turbine-status__triangle.live {
+    fill: #FF6D00;
     transition: .2s ease-in-out;
 }
 
@@ -140,5 +150,22 @@ body {
 .turbine-status__triangle--oil-level.complete,
 .turbine-status__triangle--vibration.complete {
     fill: white;
+    opacity: 1;
     transition: .2s ease-in-out;
+}
+
+
+/* video wrapper */
+
+.video-wrapper {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+}
+
+.video-wrapper video {
+    width: 100vw;
+    height: 100vh;
 }
