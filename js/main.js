@@ -70,7 +70,7 @@ function cycle(list,itemNbr) {
     
     list.eq(itemNbr)
       .fadeIn(400)
-      .delay(1000)
+      .delay(5000)
       .fadeOut(400,function(){ 
         cycle(list, ++itemNbr % 5)
       });

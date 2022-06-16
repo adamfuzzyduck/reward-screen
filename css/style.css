@@ -99,6 +99,17 @@ body {
     pointer-events: none;
 }
 
+.turbine-status__exclamation--main {
+    animation: glow 3s infinite;
+}
+
+@keyframes glow {
+    0% { opacity: 0.5; }
+    50%{ opacity:1; }
+    100%{ opacity:0.5; }
+  }
+  
+
 .turbine-status__triangle--vibration-overlay {
     transform: translate(0px, -165px);
 }
