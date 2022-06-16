@@ -144,14 +144,14 @@ body {
     display: none;
 }
 
-.turbine-status__triangle--bolt-tension.complete,
-.turbine-status__triangle--oil-pressure.complete,
-.turbine-status__triangle--temp.complete,
-.turbine-status__triangle--oil-level.complete,
-.turbine-status__triangle--vibration.complete {
-    fill: white;
+.turbine-status__triangle--bolt-tension-inner.complete,
+.turbine-status__triangle--oil-pressure-inner.complete,
+.turbine-status__triangle--temp-inner.complete,
+.turbine-status__triangle--oil-level-inner.complete,
+.turbine-status__triangle--vibration-inner.complete {
+    display: block!important;
+    fill: white!important;
     opacity: 1;
-    transition: .2s ease-in-out;
 }
 
 
