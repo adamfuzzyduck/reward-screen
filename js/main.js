@@ -1,5 +1,6 @@
 // Oncicks which will be turned to web port signals
 
+
 $(".turbine-status__vibration").on("click", function () {
   $( this ).addClass("complete");
   $('.turbine-status__exclamation--vibration').hide();
@@ -9,8 +10,9 @@ $(".turbine-status__vibration").on("click", function () {
 
   let totalNumber = parseInt($(".number-count").attr("data-id")) -1;
   $('.number-count').attr('data-id', totalNumber );
+  // localStorage.removeItem(".action-required__action-text--incomplete-1"); 
+  // window.location.reload(true);
 });
-
 
 $(".turbine-status__temp").on("click", function () {
     $( this ).addClass("complete");
@@ -62,28 +64,25 @@ let actionText = $('g[class^="action-required__action-text--incomplete-"]').hide
     triangle = $('path[class^="turbine-status__triangle-"]').hide(),
     i = 0;
 
-  let knownLength = setInterval(function() {
-    $('.number-count').attr("data-id");
-  }, 1000);
-
 function cycle(list,itemNbr) {
     
     list.eq(itemNbr)
       .fadeIn(400)
       .delay(5000)
       .fadeOut(400,function(){ 
-        cycle(list, ++itemNbr % 5)
+        cycle(list, ++itemNbr %  list.length)
       });
-      
-};
+};  
   
 cycle(actionText,i);
 cycle(triangle,i); 
 
-var timer2 = setInterval(function() {
+setInterval(function() {
   if($('.number-count').attr("data-id") == 0 ) {
     $('.video-wrapper').fadeIn(1000);
     $('.video-source').trigger('play');
+    $(".action-required__required-text").fadeOut(200);
+    $(".turbine-status__exclamation--main").fadeOut(200);
   }
 }, 1000);
 
