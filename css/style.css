@@ -82,6 +82,7 @@ body {
 
 .action-required__required-text {
     transform: translateX(10px);
+    opacity: 0.7;
 }
 
 /** turbine status **/

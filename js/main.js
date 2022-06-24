@@ -62,6 +62,7 @@ $(".turbine-status__temp").on("click", function () {
 
 let actionText = $('g[class^="action-required__action-text--incomplete-"]').hide(),
     triangle = $('path[class^="turbine-status__triangle-"]').hide(),
+    actionRequired = $('g[class^="action-required__required-text"]').hide(),
     i = 0;
 
 function cycle(list,itemNbr) {
@@ -76,6 +77,7 @@ function cycle(list,itemNbr) {
   
 cycle(actionText,i);
 cycle(triangle,i); 
+cycle(actionRequired,i); 
 
 setInterval(function() {
   if($('.number-count').attr("data-id") == 0 ) {
